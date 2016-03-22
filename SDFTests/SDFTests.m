@@ -45,7 +45,7 @@
     NSString* un = [NSString stringWithCString:username encoding:NSUTF8StringEncoding];
     NSString* pwd = [NSString stringWithCString:passwd encoding:NSUTF8StringEncoding];
 
-    s = [s substringFromIndex:[s length] - 1];
+    s = [s substringToIndex:[s length] - 1];
     un = [un substringToIndex:[un length] - 1];
     pwd = [pwd substringToIndex:[pwd length] - 1];
 
